@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://bookkeeper01.netlify.app', 
+  origin: ['https://bookkeeper01.netlify.app', 'http://bookkeeper01.netlify.app', 'https://bookkeeper01.netlify.app/', 'https://bookkeeper01.netlify.app/login'], 
 }));
 app.use(express.json());
 
